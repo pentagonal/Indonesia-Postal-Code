@@ -6,6 +6,9 @@
 34      - Provinces
 81.248  - Areas (Postal Codes)
 ```
+## DATA TYPE
+
+`MySQL Database Syntax` ( see at ) [https://www.mysql.com/](https://www.mysql.com/)
 
 ## MySQL Database To Import
 ```
@@ -121,4 +124,11 @@ EXAMPLE OUTPUT
 - city: kota
 - province_code : Kode Provinsi ( Standar)
 - id : increment number / kode urut otomatis susunan SQL
+
+## LINK
+- [https://github.com/edwin/database-kodepos-seluruh-indonesia/](https://github.com/edwin/database-kodepos-seluruh-indonesia/)
+- [http://kodepos.posindonesia.co.id/](http://kodepos.posindonesia.co.id/)
+
+## LICENSE
+MIT @see [LICENSE](LICENSE)
 
