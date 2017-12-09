@@ -13,8 +13,8 @@
 
 ```txt
 (root)/
-    ├── Data/
-    │     └─ (file name).json          (various type JSON record)       
+    ├── Json/
+    │     └─ (file name-*...).json     (various type JSON record files)       
     │
     └─── Database/
           ├── mysql_provinces.sql      (MySQL data)
