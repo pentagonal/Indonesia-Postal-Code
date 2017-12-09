@@ -1,10 +1,12 @@
 # Indonesia Postal & Province Code
 
+> Postal codes, provinces & regions data in various formats.
+
 ## Contains:
 
 ```
 34      - Provinces
-81.248  - Areas (Postal Codes)
+81248   - Areas (Postal Codes)
 ```
 
 ## DATA TYPE
@@ -13,6 +15,19 @@
 
 ```txt
 (root)/
+    ├── Csv/
+    │    ├── Comma/     (contains csv comma as separator)
+    │    │     ├── first_row_header_db_postal_code_data.csv (first row is table header)
+    │    │     ├── first_row_header_db_province_data.csv    (first row is table header)
+    │    │     ├── noheader_db_postal_code_data.csv
+    │    │     └── noheader_db_province_data.csv
+    │    │
+    │    └── Semicolon/ (contains csv semicolon as separator)
+    │          ├── first_row_header_db_postal_code_data.csv (first row is table header)
+    │          ├── first_row_header_db_province_data.csv    (first row is table header)
+    │          ├── noheader_db_postal_code_data.csv
+    │          └── noheader_db_province_data.csv  
+    │
     ├── Json/
     │     └─ (file name-*...).json     (various type JSON record files)       
     │
@@ -21,6 +36,8 @@
           └── postgresql_provinces.sql (PostgreSQL data)
  
 ```
+
+
 ## MySQL Database To Import
 
 ```
@@ -142,5 +159,6 @@ EXAMPLE OUTPUT
 - [http://kodepos.posindonesia.co.id/](http://kodepos.posindonesia.co.id/)
 
 ## LICENSE
+
 MIT @see [LICENSE](LICENSE)
 
