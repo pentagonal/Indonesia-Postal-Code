@@ -1,0 +1,138 @@
+{
+    "11": {
+        "id": "ACEH",
+        "en": "ACEH"
+    },
+    "12": {
+        "id": "SUMATERA UTARA",
+        "en": "NORTH SUMATERA"
+    },
+    "13": {
+        "id": "SUMATERA BARAT",
+        "en": "WEST SUMATERA"
+    },
+    "14": {
+        "id": "RIAU",
+        "en": "RIAU"
+    },
+    "15": {
+        "id": "JAMBI",
+        "en": "JAMBI"
+    },
+    "16": {
+        "id": "SUMATERA SELATAN",
+        "en": "SOUTH SUMATERA"
+    },
+    "17": {
+        "id": "BENGKULU",
+        "en": "BENGKULU"
+    },
+    "18": {
+        "id": "LAMPUNG",
+        "en": "LAMPUNG"
+    },
+    "19": {
+        "id": "KEPULAUAN BANGKA BELITUNG",
+        "en": "BANGKA BELITUNG ISLANDS"
+    },
+    "21": {
+        "id": "KEPULAUAN RIAU",
+        "en": "RIAU ISLANDS"
+    },
+    "31": {
+        "id": "DAERAH KHUSUS IBUKOTA JAKARTA",
+        "en": "SPECIAL CAPITAL REGION OF JAKARTA"
+    },
+    "32": {
+        "id": "JAWA BARAT",
+        "en": "WEST JAVA"
+    },
+    "33": {
+        "id": "JAWA TENGAH",
+        "en": "CENTRAL JAVA"
+    },
+    "34": {
+        "id": "DAERAH ISTIMEWA YOGYAKARTA",
+        "en": "SEPCIAL REGION OF YOGYAKARTA"
+    },
+    "35": {
+        "id": "JAWA TIMUR",
+        "en": "EAST JAVA"
+    },
+    "36": {
+        "id": "BANTEN",
+        "en": "BANTEN"
+    },
+    "51": {
+        "id": "BALI",
+        "en": "BALI"
+    },
+    "52": {
+        "id": "NUSA TENGGARA BARAT",
+        "en": "WEST NUSA TENGGARA"
+    },
+    "53": {
+        "id": "NUSA TENGGARA TIMUR",
+        "en": "EAST NUSA TENGGARA"
+    },
+    "61": {
+        "id": "KALIMANTAN BARAT",
+        "en": "WEST KALIMANTAN"
+    },
+    "62": {
+        "id": "KALIMANTAN TENGAH",
+        "en": "CENTRAL KALIMANTAN"
+    },
+    "63": {
+        "id": "KALIMANTAN SELATAN",
+        "en": "SOUTH KALIMANTAN"
+    },
+    "64": {
+        "id": "KALIMANTAN TIMUR",
+        "en": "EAST KALIMANTAN"
+    },
+    "65": {
+        "id": "KALIMANTAN UTARA",
+        "en": "NORTH KALIMANTAN"
+    },
+    "71": {
+        "id": "SULAWESI UTARA",
+        "en": "NORTH SULAWESI"
+    },
+    "72": {
+        "id": "SULAWESI TENGAH",
+        "en": "CENTRAL SULAWESI"
+    },
+    "73": {
+        "id": "SULAWESI SELATAN",
+        "en": "SOUTH SULAWESI"
+    },
+    "74": {
+        "id": "SULAWESI TENGGARA",
+        "en": "SOUTHEAST SULAWESI"
+    },
+    "75": {
+        "id": "GORONTALO",
+        "en": "GORONTALO"
+    },
+    "76": {
+        "id": "SULAWESI BARAT",
+        "en": "WEST SULAWESI"
+    },
+    "81": {
+        "id": "MALUKU",
+        "en": "MALUKU"
+    },
+    "82": {
+        "id": "MALUKU UTARA",
+        "en": "NORTH MALUKU"
+    },
+    "91": {
+        "id": "PAPUA",
+        "en": "PAPUA"
+    },
+    "92": {
+        "id": "PAPUA BARAT",
+        "en": "WEST PAPUA"
+    }
+}

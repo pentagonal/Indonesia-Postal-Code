@@ -13,6 +13,9 @@
 
 ```txt
 (root)/
+    ├── Data/
+    │     └─ (file name).json          (various type JSON record)       
+    │
     └─── Database/
           ├── mysql_provinces.sql      (MySQL data)
           └── postgresql_provinces.sql (PostgreSQL data)
