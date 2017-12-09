@@ -6,19 +6,28 @@
 34      - Provinces
 81.248  - Areas (Postal Codes)
 ```
+
 ## DATA TYPE
 
 `MySQL Database Syntax` ( see at ) [https://www.mysql.com/](https://www.mysql.com/)
 
-## MySQL Database To Import
+```txt
+(root)/
+    └─── Database/
+          ├── mysql_provinces.sql      (MySQL data)
+          └── postgresql_provinces.sql (PostgreSQL data)
+ 
 ```
-postal_province_table.sql
+## MySQL Database To Import
+
+```
+Database/mysql_provinces.sql
 ```
 
 ## Import With CLI
 
 ```bash
-mysql -u [userName] -p [databaseName] < postal_province_table.sql
+mysql -u [userName] -p [databaseName] < mysql_provinces.sql
 ```
 
 Note :
@@ -38,7 +47,7 @@ DROP TABLE IF EXISTS `db_province_data`;
 DROP TABLE IF EXISTS `db_postal_code_data`;
 ```
 
-Please make sure delete the lines (on `postal_province_table.sql` ) or backup database before doing import process.
+Please make sure delete the lines (on `mysql_provinces.sql` or `postgresql_provinces.sql` ) or backup database before doing import process.
 
 
 ## PROVINCES REFERENCES
@@ -77,7 +86,7 @@ Please make sure delete the lines (on `postal_province_table.sql` ) or backup da
     "81" : "MALUKU",
     "82" : "MALUKU UTARA",
     "91" : "PAPUA",
-    "92" : "PAPUA BARAT",
+    "92" : "PAPUA BARAT"
 }
 ```
 
@@ -86,13 +95,13 @@ Please make sure delete the lines (on `postal_province_table.sql` ) or backup da
 ```sql
 SELECT
   `db_postal_code_data`.*,
-  `db_province_data`.`name` AS `province_name`
+  `db_province_data`.`province_name`
 FROM
   `db_postal_code_data`
 INNER JOIN
-  `db_province_data` ON `db_province_data`.`code` = `db_postal_code_data`.`province_code`
+  `db_province_data` ON `db_province_data`.`province_code` = `db_postal_code_data`.`province_code`
 WHERE
-  `db_province_data`.`code` = 11
+  `db_province_data`.`province_code` = 11
 ORDER BY
   `db_postal_code_data`.`id` DESC
 LIMIT 10 OFFSET 0
