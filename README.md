@@ -2,6 +2,18 @@
 
 > Postal codes, provinces & regions data in various formats.
 
+```txt
+- MySQL
+- PostgreSQL
+- JSON 
+- Csv 
+```
+
+**Indonesia Postal Codes Database** 
+
+> Database Kode Pos Indonesia - Kelurahan - Kecamatan - Kota
+
+
 ## Contains:
 
 ```
@@ -110,7 +122,7 @@ Please make sure delete the lines (on `mysql_provinces.sql` or `postgresql_provi
 }
 ```
 
-## EXAMPLE MYSQL CODE TO USE BOTH TABLE
+## EXAMPLE MySQL CODE TO USE BOTH TABLE
 
 ```sql
 SELECT
@@ -148,11 +160,18 @@ EXAMPLE OUTPUT
 
 ## NOTE (Indonesia)
 
-- urban : kelurahan
-- sub_district : kecamatan
-- city: kota
-- province_code : Kode Provinsi ( Standar)
-- id : increment number / kode urut otomatis susunan SQL
+---------------------------------------------------------------
+| Table Name          | Description                           |
+|---------------------|---------------------------------------|
+| `id`                | Increment number / kode urut otomatis |
+| `urban`             | Nama Kelurahan                        |
+| `city`              | Nama Kota                             |
+| `sub_district`      | kecamatan                             |
+| `postal_code`       | Kode Pos Daerah                       |
+| `province_code`     | Kode Provinsi ( Standar )             |
+| `province_name`     | Nama Provinsi ( Bahasa Indonesia )    |
+| `province_name_en`  | Nama Provinsi ( Bahasa Inggris )      |
+--------------------------------------------------------------
 
 ## LINK
 - [https://github.com/edwin/database-kodepos-seluruh-indonesia/](https://github.com/edwin/database-kodepos-seluruh-indonesia/)
