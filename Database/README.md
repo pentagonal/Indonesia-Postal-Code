@@ -9,3 +9,7 @@ can be used as `MySQL` database ready import file data.
 > postgresql_provinces.sql
 
 can be used as `PostgreSQL` database ready import file data.
+
+> sqlite_provinces.sqlite
+
+`SQLite` ready database binary for operations.
