@@ -7,6 +7,7 @@
 - PostgreSQL
 - JSON 
 - Csv 
+- SQLite
 ```
 
 **Indonesia Postal Codes Database** 
@@ -45,7 +46,8 @@
     │
     └─── Database/
           ├── mysql_provinces.sql      (MySQL data)
-          └── postgresql_provinces.sql (PostgreSQL data)
+          ├── postgresql_provinces.sql (PostgreSQL data)
+          └── sqlite_provinces.sqlite (SQLite Binary)
  
 ```
 
