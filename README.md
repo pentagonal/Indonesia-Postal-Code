@@ -16,8 +16,10 @@
 
 follow [https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table](https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table)
 
-I've go wrong !! The province code difference between `PAPUA` on BPS is 94
+### I've got wrong !! The province code difference between `PAPUA` on BPS is 94
+
 Please consider change province code `92` code to `94`
+
 
 ## Contains:
 
@@ -80,12 +82,41 @@ Or just doing import process with `phpMyAdmin`
 ## REFERENCES
 The SQL Dump contains drop tables
 
+
 ```sql
 DROP TABLE IF EXISTS `db_province_data`;
 DROP TABLE IF EXISTS `db_postal_code_data`;
 ```
 
 Please make sure delete the lines (on `mysql_provinces.sql` or `postgresql_provinces.sql` ) or backup database before doing import process.
+
+
+
+I'm sorry about unoptimized database structures.
+> Maybe you could add more index & split it into:
+
+
+- `provinces`
+    - `province_id` INTEGER PRIMARY KEY AUTOINCREMENT
+    - `province_name` varchar(255)
+    - `province_name_en` varchar(255)
+    - `province_code` INTEGER -> `UNIQUE INDEX`
+
+- `cities`
+    - `city_id` INTEGER PRIMARY KEY AUTOINCREMENT
+    - `city_name` varchar(255) -> `INDEX` -> `CONSTRAINT cities.city_name -> cities.province_code`
+    - `province_code` INTEGER -> `REFERENCES provinces.province_code`
+
+- `subdistricts`
+    - `subdistrict_id` INTEGER PRIMARY KEY AUTOINCREMENT
+    - `subdistrict_name` varchar(255) -> `INDEX` -> `CONSTRAINT subdistricts.subdistrict_name -> urbans.city_id`
+    - `city_id` INTEGER -> `REFERENCES cities.id`
+
+- `urbans`
+    - `urban_id` INTEGER PRIMARY KEY AUTOINCREMENT
+    - `urban_name` varchar(255) -> `INDEX` -> `CONSTRAINT urbans.urban_name -> urbans.subdistrict_id`
+    - `postal_code` INTEGER -> `UNIQUE INDEX`
+    - `subdistrict_id` INTEGER -> `REFERENCES subdistricts.subdistrict_id`
 
 
 ## PROVINCES REFERENCES
