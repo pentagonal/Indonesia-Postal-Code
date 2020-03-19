@@ -14,7 +14,7 @@
 
 > Database Kode Pos Indonesia - Kelurahan - Kecamatan - Kota
 
-follow (https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table)[https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table]
+follow [https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table](https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table)
 
 I've go wrong !! The province code difference between `PAPUA` on BPS is 94
 
