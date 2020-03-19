@@ -14,6 +14,10 @@
 
 > Database Kode Pos Indonesia - Kelurahan - Kecamatan - Kota
 
+follow (https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table)[https://sig-dev.bps.go.id/webgis/pencariankodenama#data-table]
+
+I've go wrong !! The province code difference between `PAPUA` on BPS is 94
+
 
 ## Contains:
 
@@ -120,7 +124,7 @@ Please make sure delete the lines (on `mysql_provinces.sql` or `postgresql_provi
     "81" : "MALUKU",
     "82" : "MALUKU UTARA",
     "91" : "PAPUA",
-    "92" : "PAPUA BARAT"
+    "94" : "PAPUA BARAT"
 }
 ```
 
