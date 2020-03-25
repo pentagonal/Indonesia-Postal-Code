@@ -1,5 +1,13 @@
 # Indonesia Postal & Province Code
 
+## RECOMMENDATION
+
+Use our another repository [https://github.com/ArrayAccess/Indonesia-Postal-And-Area](https://github.com/ArrayAccess/Indonesia-Postal-And-Area)
+when you need more complete data from **Badan Pusat Statistic (BPS) Indonesia** contains geolocations from country to sub-districts.
+
+
+## 
+
 > Postal codes, provinces & regions data in various formats.
 
 ```txt
